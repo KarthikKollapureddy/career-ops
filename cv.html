@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Karthik Kollapureddy — CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2px 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .contact-row a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .contact-row .separator {
+    color: #ccc;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  /* === PROFESSIONAL SUMMARY === */
+  .summary-text {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #2f2f2f;
+  }
+
+  /* Links must never break across lines */
+  a {
+    white-space: nowrap;
+  }
+
+  /* === CORE COMPETENCIES === */
+  .competencies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .competency-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(187, 74%, 28%);
+    background: hsl(187, 40%, 95%);
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(187, 40%, 88%);
+  }
+
+  /* === WORK EXPERIENCE === */
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .job-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .job-period {
+    font-size: 10.5px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .job-location {
+    font-size: 10px;
+    color: #888;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+
+  .job li {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .job li strong {
+    font-weight: 600;
+  }
+
+  /* === PROJECTS === */
+  .project {
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187, 74%, 32%);
+    background: hsl(187, 40%, 95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+
+  .project-desc {
+    font-size: 10.5px;
+    color: #444;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .project-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 3px;
+  }
+
+  /* === EDUCATION === */
+  .edu-item {
+    margin-bottom: 8px;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+  }
+
+  .edu-org {
+    color: hsl(270, 70%, 45%);
+    font-weight: 500;
+  }
+
+  .edu-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  /* === CERTIFICATIONS === */
+  .cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+
+  .cert-title {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .cert-org {
+    color: hsl(270, 70%, 45%);
+  }
+
+  .cert-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  /* === SKILLS === */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+
+  .skill-item {
+    font-size: 10.5px;
+    color: #444;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: #333;
+    font-size: 10.5px;
+  }
+
+  /* === PRINT === */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      padding: 0;
+    }
+  }
+
+  /* === PAGE BREAK CONTROL === */
+  .avoid-break,
+  .job,
+  .project,
+  .edu-item,
+  .cert-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header avoid-break">
+    <h1>Sai Karthik Kollapureddy</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>+91 9515484856</span>
+      <span class="separator">|</span>
+      <span>karthiksaik2000@gmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://www.linkedin.com/in/sai-karthik-kollapureddy-7939241b0/">LinkedIn</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/KarthikKollapureddy">GitHub</a>
+      <span class="separator">|</span>
+      <span>Hyderabad, India</span>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">Results-driven Java Full Stack Developer with over 3.6 years of experience designing, maintaining, and scaling highly distributed microservices and cloud-hosted web applications. Expertise in Java 21, Spring Boot, React, and AWS, with a proven track record of optimizing enterprise systems for high-volume healthcare and logistics domains. Adept at implementing event-driven architectures using Kafka, driving Agile development, and enhancing system reliability through targeted feature development, automated testing, and continuous performance monitoring.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <div class="competency-tag">Java 21</div>
+      <div class="competency-tag">Spring Boot</div>
+      <div class="competency-tag">Microservices</div>
+      <div class="competency-tag">Kafka</div>
+      <div class="competency-tag">React.js</div>
+      <!-- <div class="competency-tag">Angular 12</div> -->
+      <div class="competency-tag">AWS</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experience</div>
+    
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Wipro Technologies Ltd. | Client - United Health Group</span>
+        <span class="job-period">Feb 2025 – Apr 2026</span>
+      </div>
+      <div class="job-role">Java Full Stack Developer</div>
+      <ul>
+        <li>Architected and developed end-to-end microservices utilizing Java 21 and Spring Boot, integrating Kafka for event-driven data processing and MySQL for robust database management.</li>
+        <li>Built and deployed responsive React.js frontend applications hosted on AWS, optimizing global performance and availability using CloudFront, Route 53, and S3.</li>
+        <li>Integrated React interfaces with backend microservices, successfully transitioning the API architecture from RESTful APIs to GraphQL Queries (read-only) to optimize data fetching and enhance user experience.</li>
+        <li>Deployed and monitored containerized microservices within existing Kubernetes environments, ensuring high availability and fault tolerance for production deployments.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Wipro Technologies Ltd. | Client - Federal Express</span>
+        <span class="job-period">Sep 2022 – Jan 2025</span>
+      </div>
+      <div class="job-role">Backend Developer</div>
+      <ul>
+        <li>Maintained and enhanced a highly scalable Java Spring Boot Microservices ecosystem responsible for processing real-time pickup and delivery data.</li>
+        <li>Developed and integrated new features to handle peak performance loads from upstream STARV scanners, ensuring accurate live visibility of on-road events.</li>
+        <li>Implemented robust enterprise security protocols, including OAuth2 authentication and authorization flows, to safeguard sensitive shipment and application data.</li>
+        <li>Automated QA and testing pipelines by developing BDD Cucumber test suites, significantly improving release efficiency and overall software reliability.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Key Projects</div>
+    
+    <div class="project">
+      <div class="project-title">My Practice Profile (UHG) <span class="project-badge">Healthcare</span></div>
+      <div class="project-desc">Contributed to a provider portal tool enabling healthcare organizations to view and attest to demographic information. Streamlined workflow for single-point demographic updates, accelerating data synchronization across systems.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">On Road Event Gateway (FedEx) <span class="project-badge">Logistics</span></div>
+      <div class="project-desc">Built end-to-end data pipelines consuming events from STARV/FORGE scanners. Delivered critical package data to downstream PWO and Task Core applications, enabling daily live tracking features such as picture proof of delivery.</div>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Education</div>
+    
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">Bachelor of Technology</span>
+        <span class="edu-year">June 2018 – July 2022</span>
+      </div>
+      <div class="edu-org">Pragati Engineering College</div>
+      <div class="edu-desc">CGPA: 8.97/10.00</div>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Certifications</div>
+    
+    <div class="cert-item">
+      <span class="cert-title">Certification of Appreciation, Cloud Migration</span>
+      <span class="cert-year">Apr 2026</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Core Java, Spring-Boot and Microservices L1</span>
+      <span class="cert-year">2025</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">GitHub Foundations Certification</span>
+      <span class="cert-year">2024</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">AWS Certified Cloud Practitioner Fundamentals</span>
+      <span class="cert-year">2023</span>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-item"><span class="skill-category">Backend:</span> Java 21, Spring Boot, Microservices, JMS, Kafka, RESTful APIs, GraphQL (Queries)<br/>
+      <div class="skill-item"><span class="skill-category">Frontend:</span> React.js, Angular 12, HTML5, CSS3, TypeScript</div>
+      <div class="skill-item"><span class="skill-category">Cloud/DevOps:</span> AWS (S3, CloudFront, Route 53, CloudWatch, Lambda), Docker, Kubernetes, Grafana, AppDynamics</div>
+      <div class="skill-item"><span class="skill-category">Database:</span> MySQL, MongoDB (Spring Data)</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
