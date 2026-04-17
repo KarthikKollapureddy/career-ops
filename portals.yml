@@ -1,0 +1,1181 @@
+# Portal Scanner Configuration
+# Customized for Java Full Stack / Backend Developers (SDE II)
+# Focusing on Top Global Product-Based Companies and Fortune 100
+
+title_filter:
+  positive:
+    - "Java"
+    - "Backend"
+    - "Back End"
+    - "Back-End"
+    - "Full Stack"
+    - "Fullstack"
+    - "Full-Stack"
+    - "Java Full Stack"
+    - "Java Fullstack"
+    - "Java Full-Stack"
+    - "SDE"
+    - "SDE II"
+    - "SDE 2"
+    - "SDE-2"
+    - "SDE-II"
+    - "Software Engineer"
+    - "Software Development Engineer"
+    - "Spring Boot"
+    - "Spring"
+    - "Microservices"
+    - "API"
+    - "Distributed Systems"
+    - "Cloud Native"
+    - "AWS"
+    - "Kafka"
+    - "Platform Engineer"
+    - "Backend Developer"
+  negative:
+    - "Junior"
+    - "Intern"
+    - "Fresher"
+    - "Trainee"
+    - "Graduate"
+    - ".NET"
+    - "Python"
+    - "C++"
+    - "Ruby"
+    - "Staff"
+    - "Principal"
+    - "Director"
+    - "Manager"
+    - "Frontend"
+    - "UI/UX"
+    - "iOS"
+    - "Android"
+    - "Data Scientist"
+  seniority_boost:
+    - "Mid-Level"
+    - "SDE II"
+    - "SDE 2"
+    - "Senior"
+    - "Level 2"
+    - "L4"
+    - "L5"
+    - "IC2"
+    - "IC3"
+    - "Mid-Level"
+    - "SDE II"
+    - "SDE 2"
+    - "Senior"
+
+search_queries:
+  # General Aggregators targeting Java/Backend in India
+  - name: Greenhouse — Java Backend Engineer
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Backend Engineer" OR "Java Developer" India'
+    enabled: true
+
+  - name: Workable — Full Stack Roles
+    query: 'site:apply.workable.com "Full Stack" OR "SDE II" Java India'
+    enabled: true
+
+  - name: Lever — Backend SDE
+    query: 'site:jobs.lever.co "Backend" OR "Java" "Software Engineer" India'
+    enabled: true
+
+tracked_companies:
+
+  portals:
+
+  - name: Google
+    careers_url: https://careers.google.com/
+    scan_method: websearch
+    scan_query: site:careers.google.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Microsoft
+    careers_url: https://careers.microsoft.com/
+    scan_method: websearch
+    scan_query: site:careers.microsoft.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Amazon
+    careers_url: https://www.amazon.jobs/
+    scan_method: websearch
+    scan_query: site:amazon.jobs ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Apple
+    careers_url: https://jobs.apple.com/
+    scan_method: websearch
+    scan_query: site:jobs.apple.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Meta
+    careers_url: https://www.metacareers.com/
+    scan_method: websearch
+    scan_query: site:metacareers.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Netflix
+    careers_url: https://jobs.netflix.com/
+    scan_method: websearch
+    scan_query: site:jobs.netflix.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Uber
+    careers_url: https://www.uber.com/global/en/careers/list/
+    scan_method: websearch
+    scan_query: site:uber.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Airbnb
+    careers_url: https://careers.airbnb.com/
+    scan_method: websearch
+    scan_query: site:careers.airbnb.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: LinkedIn
+    careers_url: https://careers.linkedin.com/
+    scan_method: websearch
+    scan_query: site:careers.linkedin.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Salesforce
+    careers_url: https://careers.salesforce.com/
+    scan_method: websearch
+    scan_query: site:careers.salesforce.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Atlassian
+    careers_url: https://www.atlassian.com/company/careers
+    scan_method: websearch
+    scan_query: site:atlassian.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Intuit
+    careers_url: https://careers.intuit.com/
+    scan_method: websearch
+    scan_query: site:careers.intuit.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Adobe
+    careers_url: https://careers.adobe.com/
+    scan_method: websearch
+    scan_query: site:adobe.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Oracle
+    careers_url: https://careers.oracle.com/
+    scan_method: websearch
+    scan_query: site:oracle.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Cisco
+    careers_url: https://jobs.cisco.com/
+    scan_method: websearch
+    scan_query: site:cisco.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: IBM
+    careers_url: https://careers.ibm.com/
+    scan_method: websearch
+    scan_query: site:ibm.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Intel
+    careers_url: https://jobs.intel.com/
+    scan_method: websearch
+    scan_query: site:intel.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Nvidia
+    careers_url: https://www.nvidia.com/en-us/about-nvidia/careers/
+    scan_method: websearch
+    scan_query: site:nvidia.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Qualcomm
+    careers_url: https://careers.qualcomm.com/
+    scan_method: websearch
+    scan_query: site:qualcomm.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: VMware
+    careers_url: https://careers.vmware.com/
+    scan_method: websearch
+    scan_query: site:vmware.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: PayPal
+    careers_url: https://careers.pypl.com/
+    scan_method: websearch
+    scan_query: site:pypl.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Stripe
+    careers_url: https://stripe.com/jobs
+    scan_method: websearch
+    scan_query: site:stripe.com/jobs ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Square
+    careers_url: https://careers.block.xyz/
+    scan_method: websearch
+    scan_query: site:block.xyz ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+    # Finance + Indian product + SaaS startups
+    portals:
+  - name: Walmart Global Tech
+    careers_url: https://careers.walmart.com/technology
+    scan_method: websearch
+    scan_query: site:walmart.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Target
+    careers_url: https://corporate.target.com/careers/
+    scan_method: websearch
+    scan_query: site:target.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Goldman Sachs
+    careers_url: https://www.goldmansachs.com/careers/
+    scan_method: websearch
+    scan_query: site:goldmansachs.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: JPMorgan Chase
+    careers_url: https://careers.jpmorgan.com/
+    scan_method: websearch
+    scan_query: site:jpmorgan.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Morgan Stanley
+    careers_url: https://www.morganstanley.com/people-opportunities/
+    scan_method: websearch
+    scan_query: site:morganstanley.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Bloomberg
+    careers_url: https://careers.bloomberg.com/
+    scan_method: websearch
+    scan_query: site:bloomberg.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Visa
+    careers_url: https://jobs.visa.com/
+    scan_method: websearch
+    scan_query: site:visa.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Mastercard
+    careers_url: https://careers.mastercard.com/
+    scan_method: websearch
+    scan_query: site:mastercard.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: American Express
+    careers_url: https://careers.americanexpress.com/
+    scan_method: websearch
+    scan_query: site:americanexpress.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Capital One
+    careers_url: https://www.capitalonecareers.com/
+    scan_method: websearch
+    scan_query: site:capitalonecareers.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Citigroup
+    careers_url: https://careers.citigroup.com/
+    scan_method: websearch
+    scan_query: site:citigroup.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Barclays
+    careers_url: https://search.jobs.barclays/
+    scan_method: websearch
+    scan_query: site:barclays.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: HSBC
+    careers_url: https://www.hsbc.com/careers/
+    scan_method: websearch
+    scan_query: site:hsbc.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Standard Chartered
+    careers_url: https://www.sc.com/en/careers/
+    scan_method: websearch
+    scan_query: site:sc.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Deutsche Bank
+    careers_url: https://careers.db.com/
+    scan_method: websearch
+    scan_query: site:db.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: UBS
+    careers_url: https://www.ubs.com/global/en/careers.html
+    scan_method: websearch
+    scan_query: site:ubs.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: SAP
+    careers_url: https://jobs.sap.com/
+    scan_method: websearch
+    scan_query: site:sap.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: ServiceNow
+    careers_url: https://careers.servicenow.com/
+    scan_method: websearch
+    scan_query: site:servicenow.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Workday
+    careers_url: https://workday.wd5.myworkdayjobs.com/Workday
+    scan_method: websearch
+    scan_query: site:workday.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Splunk
+    careers_url: https://jobs.splunk.com/
+    scan_method: websearch
+    scan_query: site:splunk.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Palo Alto Networks
+    careers_url: https://jobs.paloaltonetworks.com/
+    scan_method: websearch
+    scan_query: site:paloaltonetworks.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: CrowdStrike
+    careers_url: https://www.crowdstrike.com/careers/
+    scan_method: websearch
+    scan_query: site:crowdstrike.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Datadog
+    careers_url: https://careers.datadoghq.com/
+    scan_method: websearch
+    scan_query: site:datadoghq.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Snowflake
+    careers_url: https://careers.snowflake.com/
+    scan_method: websearch
+    scan_query: site:snowflake.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: MongoDB
+    careers_url: https://www.mongodb.com/careers
+    scan_method: websearch
+    scan_query: site:mongodb.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Twilio
+    careers_url: https://www.twilio.com/company/jobs
+    scan_method: websearch
+    scan_query: site:twilio.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Okta
+    careers_url: https://www.okta.com/company/careers/
+    scan_method: websearch
+    scan_query: site:okta.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Zoom
+    careers_url: https://careers.zoom.us/
+    scan_method: websearch
+    scan_query: site:zoom.us ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Dropbox
+    careers_url: https://jobs.dropbox.com/
+    scan_method: websearch
+    scan_query: site:dropbox.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Shopify
+    careers_url: https://www.shopify.com/careers
+    scan_method: websearch
+    scan_query: site:shopify.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Flipkart
+    careers_url: https://www.flipkartcareers.com/
+    scan_method: websearch
+    scan_query: site:flipkartcareers.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Swiggy
+    careers_url: https://careers.swiggy.com/
+    scan_method: websearch
+    scan_query: site:swiggy.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Zomato
+    careers_url: https://www.zomato.com/careers
+    scan_method: websearch
+    scan_query: site:zomato.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Razorpay
+    careers_url: https://razorpay.com/jobs/
+    scan_method: websearch
+    scan_query: site:razorpay.com/jobs ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: PhonePe
+    careers_url: https://www.phonepe.com/careers/
+    scan_method: websearch
+    scan_query: site:phonepe.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Cred
+    careers_url: https://careers.cred.club/
+    scan_method: websearch
+    scan_query: site:cred.club ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Freshworks
+    careers_url: https://www.freshworks.com/company/careers/
+    scan_method: websearch
+    scan_query: site:freshworks.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Zoho
+    careers_url: https://www.zoho.com/careers.html
+    scan_method: websearch
+    scan_query: site:zoho.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: BrowserStack
+    careers_url: https://www.browserstack.com/careers
+    scan_method: websearch
+    scan_query: site:browserstack.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Postman
+    careers_url: https://www.postman.com/company/careers/
+    scan_method: websearch
+    scan_query: site:postman.com/company/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Paytm
+    careers_url: https://jobs.lever.co/paytm
+    scan_method: websearch
+    scan_query: site:jobs.lever.co/paytm ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+    # Consulting, service companies, trading firms, AI companies
+    portals:
+  - name: Infosys
+    careers_url: https://www.infosys.com/careers/
+    scan_method: websearch
+    scan_query: site:infosys.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Wipro
+    careers_url: https://careers.wipro.com/
+    scan_method: websearch
+    scan_query: site:wipro.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: TCS
+    careers_url: https://www.tcs.com/careers
+    scan_method: websearch
+    scan_query: site:tcs.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: HCLTech
+    careers_url: https://www.hcltech.com/careers
+    scan_method: websearch
+    scan_query: site:hcltech.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Tech Mahindra
+    careers_url: https://careers.techmahindra.com/
+    scan_method: websearch
+    scan_query: site:techmahindra.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Cognizant
+    careers_url: https://careers.cognizant.com/
+    scan_method: websearch
+    scan_query: site:cognizant.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Capgemini
+    careers_url: https://www.capgemini.com/careers/
+    scan_method: websearch
+    scan_query: site:capgemini.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Accenture
+    careers_url: https://www.accenture.com/in-en/careers
+    scan_method: websearch
+    scan_query: site:accenture.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Deloitte
+    careers_url: https://www2.deloitte.com/global/en/careers.html
+    scan_method: websearch
+    scan_query: site:deloitte.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: PwC
+    careers_url: https://www.pwc.com/gx/en/careers.html
+    scan_method: websearch
+    scan_query: site:pwc.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: EY
+    careers_url: https://www.ey.com/en_in/careers
+    scan_method: websearch
+    scan_query: site:ey.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: KPMG
+    careers_url: https://home.kpmg/xx/en/home/careers.html
+    scan_method: websearch
+    scan_query: site:kpmg.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: ThoughtWorks
+    careers_url: https://www.thoughtworks.com/careers
+    scan_method: websearch
+    scan_query: site:thoughtworks.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: EPAM
+    careers_url: https://www.epam.com/careers
+    scan_method: websearch
+    scan_query: site:epam.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Globant
+    careers_url: https://www.globant.com/careers
+    scan_method: websearch
+    scan_query: site:globant.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Endava
+    careers_url: https://www.endava.com/en/careers
+    scan_method: websearch
+    scan_query: site:endava.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Publicis Sapient
+    careers_url: https://www.publicissapient.com/careers
+    scan_method: websearch
+    scan_query: site:publicissapient.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Nagarro
+    careers_url: https://www.nagarro.com/en/careers
+    scan_method: websearch
+    scan_query: site:nagarro.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Zensar
+    careers_url: https://www.zensar.com/careers
+    scan_method: websearch
+    scan_query: site:zensar.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Birlasoft
+    careers_url: https://www.birlasoft.com/careers
+    scan_method: websearch
+    scan_query: site:birlasoft.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: LTIMindtree
+    careers_url: https://www.ltimindtree.com/careers/
+    scan_method: websearch
+    scan_query: site:ltimindtree.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Persistent Systems
+    careers_url: https://www.persistent.com/careers/
+    scan_method: websearch
+    scan_query: site:persistent.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Mphasis
+    careers_url: https://www.mphasis.com/home/careers.html
+    scan_method: websearch
+    scan_query: site:mphasis.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Hexaware
+    careers_url: https://hexaware.com/careers/
+    scan_method: websearch
+    scan_query: site:hexaware.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Virtusa
+    careers_url: https://www.virtusa.com/careers
+    scan_method: websearch
+    scan_query: site:virtusa.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: UST
+    careers_url: https://www.ust.com/en/careers
+    scan_method: websearch
+    scan_query: site:ust.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Tower Research
+    careers_url: https://www.tower-research.com/careers/
+    scan_method: websearch
+    scan_query: site:tower-research.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Two Sigma
+    careers_url: https://www.twosigma.com/careers/
+    scan_method: websearch
+    scan_query: site:twosigma.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Jane Street
+    careers_url: https://www.janestreet.com/join-jane-street/
+    scan_method: websearch
+    scan_query: site:janestreet.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: IMC Trading
+    careers_url: https://careers.imc.com/
+    scan_method: websearch
+    scan_query: site:imc.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Optiver
+    careers_url: https://optiver.com/working-at-optiver/careers/
+    scan_method: websearch
+    scan_query: site:optiver.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Palantir
+    careers_url: https://www.palantir.com/careers/
+    scan_method: websearch
+    scan_query: site:palantir.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: UiPath
+    careers_url: https://www.uipath.com/careers
+    scan_method: websearch
+    scan_query: site:uipath.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Automation Anywhere
+    careers_url: https://www.automationanywhere.com/company/careers
+    scan_method: websearch
+    scan_query: site:automationanywhere.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: DataRobot
+    careers_url: https://www.datarobot.com/careers/
+    scan_method: websearch
+    scan_query: site:datarobot.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: H2O.ai
+    careers_url: https://h2o.ai/company/careers/
+    scan_method: websearch
+    scan_query: site:h2o.ai ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Scale AI
+    careers_url: https://scale.com/careers
+    scan_method: websearch
+    scan_query: site:scale.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: OpenAI
+    careers_url: https://openai.com/careers
+    scan_method: websearch
+    scan_query: site:openai.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Cohere
+    careers_url: https://cohere.com/careers
+    scan_method: websearch
+    scan_query: site:cohere.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Hugging Face
+    careers_url: https://huggingface.co/join-us
+    scan_method: websearch
+    scan_query: site:huggingface.co ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+    # Ecommerce global, travel, telecom, hardware, manufacturing
+    portals:
+  - name: Expedia
+    careers_url: https://careers.expediagroup.com/
+    scan_method: websearch
+    scan_query: site:expediagroup.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Booking.com
+    careers_url: https://careers.booking.com/
+    scan_method: websearch
+    scan_query: site:booking.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Tripadvisor
+    careers_url: https://careers.tripadvisor.com/
+    scan_method: websearch
+    scan_query: site:tripadvisor.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Agoda
+    careers_url: https://careers.agoda.com/
+    scan_method: websearch
+    scan_query: site:agoda.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: MakeMyTrip
+    careers_url: https://careers.makemytrip.com/
+    scan_method: websearch
+    scan_query: site:makemytrip.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Cleartrip
+    careers_url: https://careers.cleartrip.com/
+    scan_method: websearch
+    scan_query: site:cleartrip.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Ixigo
+    careers_url: https://www.ixigo.com/careers
+    scan_method: websearch
+    scan_query: site:ixigo.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Yatra
+    careers_url: https://www.yatra.com/careers
+    scan_method: websearch
+    scan_query: site:yatra.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: RedBus
+    careers_url: https://www.redbus.in/careers
+    scan_method: websearch
+    scan_query: site:redbus.in ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Nykaa
+    careers_url: https://www.nykaa.com/careers
+    scan_method: websearch
+    scan_query: site:nykaa.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Reliance Jio
+    careers_url: https://careers.jio.com/
+    scan_method: websearch
+    scan_query: site:jio.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Airtel
+    careers_url: https://careers.airtel.com/
+    scan_method: websearch
+    scan_query: site:airtel.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Vodafone Idea
+    careers_url: https://www.myvi.in/careers
+    scan_method: websearch
+    scan_query: site:myvi.in ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Samsung
+    careers_url: https://www.samsung.com/in/about-us/careers/
+    scan_method: websearch
+    scan_query: site:samsung.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Sony
+    careers_url: https://www.sonyjobs.com/
+    scan_method: websearch
+    scan_query: site:sony.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: LG
+    careers_url: https://www.lg.com/global/careers
+    scan_method: websearch
+    scan_query: site:lg.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Panasonic
+    careers_url: https://careers.panasonic.com/global/
+    scan_method: websearch
+    scan_query: site:panasonic.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Philips
+    careers_url: https://www.careers.philips.com/
+    scan_method: websearch
+    scan_query: site:philips.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Bosch
+    careers_url: https://www.bosch.com/careers/
+    scan_method: websearch
+    scan_query: site:bosch.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Siemens
+    careers_url: https://jobs.siemens.com/
+    scan_method: websearch
+    scan_query: site:siemens.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Honeywell
+    careers_url: https://careers.honeywell.com/
+    scan_method: websearch
+    scan_query: site:honeywell.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: GE
+    careers_url: https://jobs.gecareers.com/
+    scan_method: websearch
+    scan_query: site:ge.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Schneider Electric
+    careers_url: https://www.se.com/in/en/about-us/careers/
+    scan_method: websearch
+    scan_query: site:se.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: ABB
+    careers_url: https://careers.abb/
+    scan_method: websearch
+    scan_query: site:abb.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Rockwell Automation
+    careers_url: https://www.rockwellautomation.com/en-us/company/careers.html
+    scan_method: websearch
+    scan_query: site:rockwellautomation.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Emerson
+    careers_url: https://www.emerson.com/en-us/careers
+    scan_method: websearch
+    scan_query: site:emerson.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Texas Instruments
+    careers_url: https://careers.ti.com/
+    scan_method: websearch
+    scan_query: site:ti.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Analog Devices
+    careers_url: https://www.analog.com/en/careers.html
+    scan_method: websearch
+    scan_query: site:analog.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Broadcom
+    careers_url: https://careers.broadcom.com/
+    scan_method: websearch
+    scan_query: site:broadcom.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: AMD
+    careers_url: https://careers.amd.com/
+    scan_method: websearch
+    scan_query: site:amd.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: ARM
+    careers_url: https://careers.arm.com/
+    scan_method: websearch
+    scan_query: site:arm.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Micron
+    careers_url: https://careers.micron.com/
+    scan_method: websearch
+    scan_query: site:micron.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Western Digital
+    careers_url: https://jobs.westerndigital.com/
+    scan_method: websearch
+    scan_query: site:westerndigital.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Seagate
+    careers_url: https://www.seagate.com/in/en/careers/
+    scan_method: websearch
+    scan_query: site:seagate.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+    # industrial, pharma, FMCG, energy, conglomerates
+    portals:
+  - name: Reliance Industries
+    careers_url: https://www.ril.com/Careers.aspx
+    scan_method: websearch
+    scan_query: site:ril.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Adani Group
+    careers_url: https://www.adani.com/careers
+    scan_method: websearch
+    scan_query: site:adani.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Tata Group
+    careers_url: https://www.tata.com/careers
+    scan_method: websearch
+    scan_query: site:tata.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Mahindra Group
+    careers_url: https://www.mahindra.com/careers
+    scan_method: websearch
+    scan_query: site:mahindra.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Godrej Group
+    careers_url: https://www.godrej.com/careers
+    scan_method: websearch
+    scan_query: site:godrej.com/careers ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Larsen & Toubro
+    careers_url: https://www.larsentoubro.com/corporate/careers/
+    scan_method: websearch
+    scan_query: site:larsentoubro.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: JSW Group
+    careers_url: https://www.jsw.in/careers
+    scan_method: websearch
+    scan_query: site:jsw.in ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Vedanta
+    careers_url: https://www.vedantalimited.com/eng/careers.php
+    scan_method: websearch
+    scan_query: site:vedantalimited.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: UltraTech Cement
+    careers_url: https://www.ultratechcement.com/careers
+    scan_method: websearch
+    scan_query: site:ultratechcement.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Asian Paints
+    careers_url: https://www.asianpaints.com/careers.html
+    scan_method: websearch
+    scan_query: site:asianpaints.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Pidilite
+    careers_url: https://www.pidilite.com/careers
+    scan_method: websearch
+    scan_query: site:pidilite.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Berger Paints
+    careers_url: https://www.bergerpaints.com/careers
+    scan_method: websearch
+    scan_query: site:bergerpaints.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Hindustan Unilever
+    careers_url: https://www.hul.co.in/careers/
+    scan_method: websearch
+    scan_query: site:hul.co.in ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: ITC
+    careers_url: https://www.itcportal.com/careers/
+    scan_method: websearch
+    scan_query: site:itcportal.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Nestle
+    careers_url: https://www.nestle.com/jobs
+    scan_method: websearch
+    scan_query: site:nestle.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: PepsiCo
+    careers_url: https://www.pepsicojobs.com/
+    scan_method: websearch
+    scan_query: site:pepsicojobs.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Coca-Cola
+    careers_url: https://careers.coca-colacompany.com/
+    scan_method: websearch
+    scan_query: site:coca-colacompany.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: P&G
+    careers_url: https://www.pgcareers.com/
+    scan_method: websearch
+    scan_query: site:pgcareers.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Colgate-Palmolive
+    careers_url: https://jobs.colgate.com/
+    scan_method: websearch
+    scan_query: site:colgate.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Reckitt
+    careers_url: https://careers.reckitt.com/
+    scan_method: websearch
+    scan_query: site:reckitt.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Johnson & Johnson
+    careers_url: https://jobs.jnj.com/
+    scan_method: websearch
+    scan_query: site:jnj.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Pfizer
+    careers_url: https://www.pfizer.com/careers
+    scan_method: websearch
+    scan_query: site:pfizer.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: AstraZeneca
+    careers_url: https://careers.astrazeneca.com/
+    scan_method: websearch
+    scan_query: site:astrazeneca.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Novartis
+    careers_url: https://www.novartis.com/careers
+    scan_method: websearch
+    scan_query: site:novartis.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Roche
+    careers_url: https://careers.roche.com/
+    scan_method: websearch
+    scan_query: site:roche.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Sanofi
+    careers_url: https://jobs.sanofi.com/
+    scan_method: websearch
+    scan_query: site:sanofi.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: GSK
+    careers_url: https://jobs.gsk.com/
+    scan_method: websearch
+    scan_query: site:gsk.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Bayer
+    careers_url: https://career.bayer.com/
+    scan_method: websearch
+    scan_query: site:bayer.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Merck
+    careers_url: https://jobs.merck.com/
+    scan_method: websearch
+    scan_query: site:merck.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: ExxonMobil
+    careers_url: https://corporate.exxonmobil.com/careers
+    scan_method: websearch
+    scan_query: site:exxonmobil.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Shell
+    careers_url: https://www.shell.com/careers.html
+    scan_method: websearch
+    scan_query: site:shell.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: BP
+    careers_url: https://www.bp.com/en/global/corporate/careers.html
+    scan_method: websearch
+    scan_query: site:bp.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Chevron
+    careers_url: https://careers.chevron.com/
+    scan_method: websearch
+    scan_query: site:chevron.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: TotalEnergies
+    careers_url: https://careers.totalenergies.com/
+    scan_method: websearch
+    scan_query: site:totalenergies.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+    # Logistics
+    portals:
+  - name: FedEx
+    careers_url: https://careers.fedex.com/
+    scan_method: websearch
+    scan_query: site:careers.fedex.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: UPS
+    careers_url: https://www.jobs-ups.com/
+    scan_method: websearch
+    scan_query: site:jobs-ups.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: DHL
+    careers_url: https://careers.dhl.com/
+    scan_method: websearch
+    scan_query: site:careers.dhl.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Maersk
+    careers_url: https://www.maersk.com/careers
+    scan_method: websearch
+    scan_query: site:maersk.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Blue Dart
+    careers_url: https://www.bluedart.com/careers
+    scan_method: websearch
+    scan_query: site:bluedart.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Delhivery
+    careers_url: https://www.delhivery.com/careers/
+    scan_method: websearch
+    scan_query: site:delhivery.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Ecom Express
+    careers_url: https://ecomexpress.in/careers/
+    scan_method: websearch
+    scan_query: site:ecomexpress.in ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: XpressBees
+    careers_url: https://www.xpressbees.com/careers
+    scan_method: websearch
+    scan_query: site:xpressbees.com ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: Shadowfax
+    careers_url: https://www.shadowfax.in/careers
+    scan_method: websearch
+    scan_query: site:shadowfax.in ("Java" OR "Backend" OR "SDE" OR "Fullstack" OR "Java Fullstack") India
+    enabled: true
+
+  - name: India Post
+    careers_url: https://www.indiapost.gov.in/VAS/Pages/Recruitment/IP_0156_Recruitment.aspx
+    scan_method: websearch
+    scan_query: site:indiapost.gov.in ("software" OR "developer" OR "IT") India
+    enabled: true
