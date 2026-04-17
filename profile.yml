@@ -1,0 +1,56 @@
+# Career-Ops Profile Configuration
+# The single source of truth for your personal data across all modes.
+
+candidate:
+  full_name: "Sai Karthik Kollapureddy" # [cite: 1]
+  email: "karthiksaik2000@gmail.com" # [cite: 2]
+  phone: "9515484856" # [cite: 2]
+  location: "Hyderabad, India" # [cite: 2]
+  # Note: Add your specific profile extensions below since the resume only lists the platform names.
+  linkedin: "https://www.linkedin.com/in/sai-karthik-kollapureddy-7939241b0/" 
+  portfolio_url: ""
+  github: "https://github.com/KarthikKollapureddy" 
+  twitter: ""
+
+target_roles:
+  primary:
+    - "Software Development Engineer II (SDE-2)"
+    - "Java Full Stack Developer"
+  archetypes:
+    - name: "Java Full Stack Developer"
+      level: "Mid-Level/SDE-2"
+      fit: "primary"
+    - name: "Backend Developer"
+      level: "Mid-Level"
+      fit: "secondary"
+    - name: "Cloud/Platform Engineer"
+      level: "Mid-Level"
+      fit: "adjacent"
+
+narrative:
+  headline: "Java Full Stack Developer specializing in scalable microservices and cloud-hosted web applications." [cite_start]# [cite: 4]
+  exit_story: "After 3.6+ years optimizing enterprise systems for logistics and healthcare clients, transitioning to tackle new challenges as an SDE-2." [cite_start]# [cite: 4, 5]
+  superpowers:
+    - "Event-driven architectures using Kafka" # [cite: 6, 11]
+    - "High-performance microservices with Java 17,21 and Spring Boot" 
+    - "React.js frontend integration using ReST and GraphQL queries for data retrieval" # [cite: 12, 13]
+    - "System maintenance and targeted feature development for high-volume environments" 
+  proof_points:
+    - name: "FedEx On Road Event Gateway" # [cite: 27, 31]
+      url: ""
+      hero_metric: "Delivered critical data pipelines enabling daily live tracking features like picture proof of delivery." [cite_start]# [cite: 32]
+    - name: "UHG My Practice Profile" # [cite: 23, 24]
+      url: ""
+      hero_metric: "Streamlined workflow for single-point demographic updates, accelerating data synchronization across healthcare systems." [cite_start]# [cite: 26]
+
+compensation:
+  target_range: "₹15L-20L"     
+  currency: "INR"
+  minimum: "₹16L"               
+  location_flexibility: "In-office preferred, Remote preferred, Hybrid"
+
+location:
+  country: "India"
+  city: "Hyderabad" # Updated for your upcoming relocation
+  timezone: "IST"
+  visa_status: "No sponsorship needed"
